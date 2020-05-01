@@ -27,7 +27,7 @@ function toggle(){
     var info = document.getElementById("info2");
     
     var condicao = info.style.display != 'block';
-    debugger;
+    
     if (condicao) {
 
         info.style.display = "block";
