@@ -1,0 +1,198 @@
+#cores{
+    width: 30%;
+    height: 20%;
+    background-color: whitesmoke;
+    border-radius: 0px 15px 15px 15px;
+    transition: 1s;
+}
+
+#title{
+    font-family: "Century Gothic";
+    font-size: 36px;
+    margin-left: 20px;
+    transition: 1s;
+}
+
+#p{
+    font-family: "Century Gothic";
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;  
+    margin-left: 50px;
+    padding-right: 70px;
+    transition: 1s;
+}
+
+#p2{
+    font-family: "Century Gothic";
+    font-size: 18px;    
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 50px;
+    padding-right: 70px;
+    transition: 1s;
+}
+
+#meusTemas{    
+    background-color: white;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 90px;
+    text-align: center;   
+    font-family: "Century Gothic";
+    padding-left: 6px;
+    transition: 1s;
+}
+
+#butt1{
+    background-color: gray;
+    margin-left: 40px;
+    width: 120px;
+    height: 40px;
+    font-family: "Century Gothic";
+    font-size: 17px;
+    color: white;
+    margin-left: 130px;
+    border-radius: 20px;
+    border: none;
+    transition: 1s;
+}
+
+#butt2{
+    background-color: gray;
+    color: white;
+    text-decoration: underline;
+    width: 130px;
+    height: 30px;
+    margin-left: 125px;
+    margin-bottom: 7%;
+    border-radius: 20px;
+    border: none;
+    transition: 1s;
+}
+
+#Avancado{
+    display: none;
+    transition: 1s;
+    
+}
+
+#p3{
+    font-family: "Century Gothic";
+    font-size: 15px;
+    margin-left: 3%;
+    padding-right: 70px;
+    transition: 1s;
+}
+
+#p8{
+    font-family: "Century Gothic";
+    font-size: 15px;
+    margin-left: 3%;
+    padding-right: 70px;    
+    padding-top: 4%;
+    transition: 1s;
+}
+
+#p4{
+    font-family: "Century Gothic";
+    font-size: 15px;
+    margin-left: 3%;
+    padding-right: 70px;
+    transition: 1s;
+}
+
+#p9{
+    font-family: "Century Gothic";
+    font-size: 15px;
+    margin-left: 3%;
+    padding-right: 70px;    
+    padding-top: 4%;
+    transition: 1s;
+}
+
+#valor{
+    margin-left: 3%;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#valor1{
+    margin-left: 5%;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#valor2{
+    margin-left: 4.5%;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#font1{
+    margin-left: 3.7%;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#font2{
+    margin-left: 2.3%;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#font3{
+    margin-left: 2.8%;
+    border: none;
+    width: 200px;
+    height: 30px;
+    margin-top: 0.2%;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#butt3{
+    margin-left: 70%;
+    margin-top: 6%;
+    margin-bottom: 7%;    
+    width: 70px;
+    height: 30px;
+    background-color: gray;
+    font-family: "Century Gothic";
+    color: white;
+    border-radius: 20px;
+    border: none;
+    transition: 1s;
+}
+
+
+#butt4{
+    margin-left: 70%;
+    margin-top: 6%;
+    margin-bottom: 7%;    
+    width: 70px;
+    height: 30px;
+    background-color: gray;
+    font-family: "Century Gothic";
+    color: white;
+    border-radius: 20px;
+    border: none;
+    transition: 1s;
+}

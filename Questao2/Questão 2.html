@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="Questao 2.css">
+            <script src="Questao 2.js"></script>
+        </head>
+        <body>
+            <div id="cores">
+                <p id="title"><b>Escolha o tema!!!</b></p>
+                <p id="p">Veja a lista de temas disponibilizados, ao escolher o tema, clique em enviar e divirta-se!</p>
+                <p id="p2">Caso não goste de nenhum tema, vá no modo avançado</p>
+                <form id="temas">
+                    <select id="meusTemas">
+                        <option id="option" value="Padrão">Padrão</option> 
+                        <option id="option" value="Escuro">Nocturne</option>
+                        <option id="option" value="Burnt Sienna">Burnt Sienna</option>  
+                        <option id="option" value="Sunglow">Sunglow</option>  
+                        <option id="option" value="Dodger Blue">Dodger Blue</option>
+                    </select>
+                    <p><input type="button" id="butt1" value="ENVIAR!" onclick="Theme()"></p>
+                    <p><input type ="button" id="butt2" value="Modo Avançado" onclick="Show()" ondblclick="Hide()"></p>
+                        <div id="Avancado">
+
+                            <p id="p8"><b>Background Settings:</b></p>
+                            <p id="p3">Color HEX: <input type="text" id="valor"></p>                            
+        
+                            <input type="button" id="butt3" value="Enviar!" onclick="corav()">
+
+                            
+                            <p id="p9"><b>Buttons Settings:</b></p>
+                            <p id="p4">Color HEX: <input type="text" id="valor2"></p>  
+        
+                            <input type="button" id="butt4" value="Enviar!" onclick="corav2()">
+                        </div>
+                </form>
+            </div>
+        </body>
+    </html>
