@@ -1,158 +1,194 @@
+window.onload = () => {
+
+    var butt1 = document.getElementById('butt1');
+    butt1.addEventListener('click', Theme, false);
+
+    var butt2 = document.getElementById('butt2');
+    butt2.addEventListener('click', toggle, false);
+
+    var butt3 = document.getElementById('butt3');
+    butt3.addEventListener('click', corav, false);
+
+    var butt4 = document.getElementById('butt4');
+    butt4.addEventListener('click', corav2, false);
+};
+
+var themas = {
+    'Padrão':{
+        cores: ['backgroundColor' , 'whitesmoke'],
+        title: ['color' , "black"],
+        title: ['fontFamily' , "Century Gothic"],  
+        p: ['color' , "black"],
+        p2: ['color' , "black"],   
+        p3: ['color' , "black"],   
+        p8: ['color' , "black"],
+        p9: ['color' , "black"],    
+        p10: ['color' , "white"],
+        p11: ['color' , "white"],
+        p: ['fontFamily' , "Century Gothic"],
+        p2: ['fontFamily' , "Century Gothic"],
+        butt1: ['fontFamily' , "Century Gothic"],
+        butt1: ['background' , "gray"],
+        butt1: ['color' , "white"],             
+        meusTemas: ['fontFamily' , "Century Gothic"],
+        meusTemas: ['backgroundColor' , "white"],
+        meusTemas: ['color' , "black"],            
+        butt2: ['fontFamily' , "Arial"],
+        butt2: ['background' , "gray"],
+        butt2: ['color' , "white"], 
+        butt3: ['color' , "white"],
+        butt3: ['background' , "gray"],
+        butt4: ['background' , "gray"],
+        butt4: ['color' , "white"],
+    },
+    'Escuro':{
+        cores: ['backgroundColor', "#262626"],
+        title: ['color', "white"],
+        title: ['fontFamily', "Century Gothic"],  
+        p: ['color', "white"],
+        p2: ['color', "white"],   
+        p3: ['color', "white"],   
+        p8: ['color', "white"],
+        p9: ['color', "white"],    
+        p10: ['color', "white"],
+        p11: ['color', "white"],
+        p: ['fontFamily', "Century Gothic"],
+        p2: ['fontFamily', "Century Gothic"], 
+        butt1: ['fontFamily', "Century Gothic"],
+        butt1: ['backgroundColor', "black"],
+        butt1: ['color', "white"],             
+        meusTemas: ['fontFamily', "Century Gothic"],
+        meusTemas: ['backgroundColor', "black"],
+        meusTemas: ['color', "white"],             
+        butt2: ['fontFamily', "Century Gothic"],
+        butt2: ['backgroundColor', "black"],
+        butt2: ['color', "white"],
+        butt3: ['backgroundColor', "black"],
+    },
+    'Burnt Sienna':{
+        cores: ['backgroundColor', "#F3564D"],
+        title: ['color', "white"],
+        title: ['fontFamily', "Century Gothic"],     
+        p: ['color', "white"],
+        p2: ['color', "white"],   
+        p3: ['color', "white"],   
+        p8: ['color', "white"],
+        p9: ['color', "white"],    
+        p10: ['color', "white"],
+        p11: ['color', "white"],             
+        p: ['fontFamily', "Century Gothic"],
+        p2: ['fontFamily', "Century Gothic"], 
+        butt1: ['fontFamily', "Century Gothic"],
+        butt1: ['backgroundColor', "#DD4646"],
+        butt1: ['color', "white"],             
+        meusTemas: ['fontFamily', "Century Gothic"],
+        meusTemas: ['backgroundColor', "#DD4646"],
+        meusTemas: ['color', "white"],
+        butt2: ['fontFamily', "Arial"],
+        butt2: ['backgroundColor', "#DD4646"],
+        butt2: ['color', "white"], 
+        butt3: ['color', "white"], 
+        butt3: ['backgroundColor', "#DD4646"],
+    },
+    'Sunglow':{
+        cores: ['backgroundColor', "#FFD13A"],
+        title: ['color', "black"],
+        title: ['fontFamily', "Century Gothic"],  
+        p: ['fontFamily', "Century Gothic"],
+        p2: ['fontFamily', "Century Gothic"],       
+        p: ['color', "black"],
+        p2: ['color', "black"],   
+        p3: ['color', "white"],   
+        p8: ['color', "white"],
+        p9: ['color', "white"],    
+        p10: ['color', "white"],
+        p11: ['color', "white"],
+        butt1: ['fontFamily', "Century Gothic"],
+        butt1: ['backgroundColor', "#E5C534"],
+        butt1: ['color', "black"],             
+        meusTemas: ['fontFamily', "Century Gothic"],
+        meusTemas: ['backgroundColor', "#E5C534"],
+        meusTemas: ['color', "black"],
+        butt2: ['fontFamily', "Century Gothic"],
+        butt2: ['backgroundColor', "#E5C534"],
+        butt2: ['color', "black"],
+        butt3: ['color', "black"],
+        butt3: ['backgroundColor', "#E5C534"], 
+    },
+    'Dodger Blue':{
+        cores : ['backgroundColor', "dodgerblue"],
+        title : ['color', "white"],
+        title : ['fontFamily', "Century Gothic"],  
+        p : ['fontFamily', "Century Gothic"],
+        p2 : ['fontFamily', "Century Gothic"],     
+        p : ['color', "white"],
+        p2 : ['color', "white"],    
+        p3 : ['color', "white"],   
+        p8 : ['color', "white"],
+        p9 : ['color', "white"],    
+        p10 : ['color', "white"],
+        p11 : ['color', "white"],
+        butt1 : ['fontFamily', "Century Gothic"],
+        butt1 : ['backgroundColor', "#1B85E2"],
+        butt1 : ['color', "white"],
+        butt1 : ['fontFamily', "Century Gothic"],
+        meusTemas : ['backgroundColor', "#1B85E2"],
+        meusTemas : ['color', "white"],
+        butt1 : ['fontFamily', "Century Gothic"],
+        butt2 : ['backgroundColor', "#1B85E2"],
+        butt2 : ['color', "white"], 
+        butt3 : ['color', "white"],
+        butt3 : ['backgroundColor', "#1B85E2"],
+    },
+};
+
 function Theme(){
-    cor = document.getElementById("meusTemas").value;
-    switch(cor){
-        case "Padrão":
-            document.getElementById("cores").style.backgroundColor="whitesmoke";
-            document.getElementById("title").style.color="black";
-            document.getElementById("title").style.fontFamily="Century Gothic";  
-            document.getElementById("p").style.color="black";
-            document.getElementById("p2").style.color="black";   
-            document.getElementById("p3").style.color="white";   
-            document.getElementById("p8").style.color="white";
-            document.getElementById("p9").style.color="white";    
-            document.getElementById("p10").style.color="white";
-            document.getElementById("p11").style.color="white";
-            document.getElementById("p").style.fontFamily="Century Gothic";
-            document.getElementById("p2").style.fontFamily="Century Gothic";
-            document.getElementById("butt1").style.fontFamily="Century Gothic";
-            document.getElementById("butt1").style.backgroundColor="gray";
-            document.getElementById("butt1").style.color="white";             
-            document.getElementById("meusTemas").style.fontFamily="Century Gothic";
-            document.getElementById("meusTemas").style.backgroundColor="white";
-            document.getElementById("meusTemas").style.color="black";            
-            document.getElementById("butt2").style.fontFamily="Arial";
-            document.getElementById("butt2").style.backgroundColor="gray";
-            document.getElementById("butt2").style.color="white"; 
-            document.getElementById("butt3").style.color="white";
-            document.getElementById("butt3").style.backgroundColor="gray";
-        break;
-        case "Escuro":
-            document.getElementById("cores").style.backgroundColor="#262626";
-            document.getElementById("title").style.color="white";
-            document.getElementById("title").style.fontFamily="Century Gothic";  
-            document.getElementById("p").style.color="white";
-            document.getElementById("p2").style.color="white";   
-            document.getElementById("p3").style.color="white";   
-            document.getElementById("p8").style.color="white";
-            document.getElementById("p9").style.color="white";    
-            document.getElementById("p10").style.color="white";
-            document.getElementById("p11").style.color="white";
-            document.getElementById("p").style.fontFamily="Century Gothic";
-            document.getElementById("p2").style.fontFamily="Century Gothic"; 
-            document.getElementById("butt1").style.fontFamily="Century Gothic";
-            document.getElementById("butt1").style.backgroundColor="black";
-            document.getElementById("butt1").style.color="white";             
-            document.getElementById("meusTemas").style.fontFamily="Century Gothic";
-            document.getElementById("meusTemas").style.backgroundColor="black";
-            document.getElementById("meusTemas").style.color="white";             
-            document.getElementById("butt2").style.fontFamily="Century Gothic";
-            document.getElementById("butt2").style.backgroundColor="black";
-            document.getElementById("butt2").style.color="white";
-            document.getElementById("butt3").style.backgroundColor="black";
-        break;
-        case "Burnt Sienna":
-            document.getElementById("cores").style.backgroundColor="#F3564D";
-            document.getElementById("title").style.color="white";
-            document.getElementById("title").style.fontFamily="Century Gothic";     
-            document.getElementById("p").style.color="white";
-            document.getElementById("p2").style.color="white";   
-            document.getElementById("p3").style.color="white";   
-            document.getElementById("p8").style.color="white";
-            document.getElementById("p9").style.color="white";    
-            document.getElementById("p10").style.color="white";
-            document.getElementById("p11").style.color="white";             
-            document.getElementById("p").style.fontFamily="Century Gothic";
-            document.getElementById("p2").style.fontFamily="Century Gothic"; 
-            document.getElementById("butt1").style.fontFamily="Century Gothic";
-            document.getElementById("butt1").style.backgroundColor="#DD4646";
-            document.getElementById("butt1").style.color="white";             
-            document.getElementById("meusTemas").style.fontFamily="Century Gothic";
-            document.getElementById("meusTemas").style.backgroundColor="#DD4646";
-            document.getElementById("meusTemas").style.color="white";
-            document.getElementById("butt2").style.fontFamily="Arial";
-            document.getElementById("butt2").style.backgroundColor="#DD4646";
-            document.getElementById("butt2").style.color="white"; 
-            document.getElementById("butt3").style.color="white"; 
-            document.getElementById("butt3").style.backgroundColor="#DD4646";    
-        break;
-        case "Sunglow":
-            document.getElementById("cores").style.backgroundColor="#FFD13A";
-            document.getElementById("title").style.color="black";
-            document.getElementById("title").style.fontFamily="Century Gothic";  
-            document.getElementById("p").style.fontFamily="Century Gothic";
-            document.getElementById("p2").style.fontFamily="Century Gothic";       
-            document.getElementById("p").style.color="black";
-            document.getElementById("p2").style.color="black";   
-            document.getElementById("p3").style.color="white";   
-            document.getElementById("p8").style.color="white";
-            document.getElementById("p9").style.color="white";    
-            document.getElementById("p10").style.color="white";
-            document.getElementById("p11").style.color="white";
-            document.getElementById("butt1").style.fontFamily="Century Gothic";
-            document.getElementById("butt1").style.backgroundColor="#E5C534";
-            document.getElementById("butt1").style.color="black";             
-            document.getElementById("meusTemas").style.fontFamily="Century Gothic";
-            document.getElementById("meusTemas").style.backgroundColor="#E5C534";
-            document.getElementById("meusTemas").style.color="black";
-            document.getElementById("butt2").style.fontFamily="Century Gothic";
-            document.getElementById("butt2").style.backgroundColor="#E5C534";
-            document.getElementById("butt2").style.color="black";
-            document.getElementById("butt3").style.color="black";
-            document.getElementById("butt3").style.backgroundColor="#E5C534"; 
-        break;
-        case "Dodger Blue":
-            document.getElementById("cores").style.backgroundColor="dodgerblue"; 
-            document.getElementById("title").style.color="white";
-            document.getElementById("title").style.fontFamily="Century Gothic";  
-            document.getElementById("p").style.fontFamily="Century Gothic";
-            document.getElementById("p2").style.fontFamily="Century Gothic";     
-            document.getElementById("p").style.color="white";
-            document.getElementById("p2").style.color="white";    
-            document.getElementById("p3").style.color="white";   
-            document.getElementById("p8").style.color="white";
-            document.getElementById("p9").style.color="white";    
-            document.getElementById("p10").style.color="white";
-            document.getElementById("p11").style.color="white";
-            document.getElementById("butt1").style.fontFamily="Century Gothic";
-            document.getElementById("butt1").style.backgroundColor="#1B85E2";
-            document.getElementById("butt1").style.color="white";
-            document.getElementById("butt1").style.fontFamily="Century Gothic";
-            document.getElementById("meusTemas").style.backgroundColor="#1B85E2";
-            document.getElementById("meusTemas").style.color="white";
-            document.getElementById("butt1").style.fontFamily="Century Gothic";
-            document.getElementById("butt2").style.backgroundColor="#1B85E2";
-            document.getElementById("butt2").style.color="white"; 
-            document.getElementById("butt3").style.color="white";
-            document.getElementById("butt3").style.backgroundColor="#1B85E2";    
-        break;
+    var cor = document.getElementById("meusTemas").value;
+
+    var tema = themas[cor];
+
+    for (var elId in tema) {
+        var element = document.getElementById(elId);
+        if (element) {
+            var item = tema[elId];
+
+            var prop = item[0];
+            var value = item[1];
+            
+            element.style[prop]=value;
+        }
     }
 }
 
-function Show(){
-    document.getElementById("Avancado").style.display="block";    
-    document.getElementById("cores").style.width="30%";
+function toggle(){
+    var avancado = document.getElementById("Avancado");
+    var condicao = avancado.style.display != "block";
+
+    if (condicao) {
+
+        avancado.style.display = "block"
+        
+    }else{
     
+        avancado.style.display = "none"
+    
+    }
 }
 
-
 function corav(){
-    cor = document.getElementById("valor").value;    
+    var cor = document.getElementById("valor").value;    
     document.getElementById("cores").style.background=cor;
 }
 
 
 function corav2(){
 
-cor2 = document.getElementById("valor2").value;    
-document.getElementById("butt1").style.background=cor2;
-document.getElementById("butt2").style.background=cor2;
-document.getElementById("butt3").style.background=cor2;
-document.getElementById("butt4").style.background=cor2;
-
+    var cor2 = document.getElementById("valor2").value;    
+    var lista = ['butt1', 'butt2', 'butt3', 'butt4'];
+    
+    for (const button of lista) {
+        document.getElementById(button).style.background=cor2;
+    }
 }
-
-function Hide(){
-    document.getElementById("Avancado").style.display="none";
-}s
 
 

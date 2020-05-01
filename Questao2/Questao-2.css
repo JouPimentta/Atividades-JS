@@ -1,5 +1,6 @@
 #cores{
-    width: 30%;
+    width: 50%;
+    margin: 0 auto;
     height: 20%;
     background-color: whitesmoke;
     border-radius: 0px 15px 15px 15px;
@@ -10,6 +11,8 @@
     font-family: "Century Gothic";
     font-size: 36px;
     margin-left: 20px;
+    padding-top: 7%;
+    padding-left: 25%;
     transition: 1s;
 }
 
@@ -39,22 +42,20 @@
     width: 200px;
     height: 30px;
     border-radius: 20px;
-    margin-left: 90px;
+    margin-left: 35%;
     text-align: center;   
     font-family: "Century Gothic";
-    padding-left: 6px;
     transition: 1s;
 }
 
 #butt1{
     background-color: gray;
-    margin-left: 40px;
     width: 120px;
     height: 40px;
     font-family: "Century Gothic";
     font-size: 17px;
     color: white;
-    margin-left: 130px;
+    margin-left: 40%;
     border-radius: 20px;
     border: none;
     transition: 1s;
@@ -66,7 +67,7 @@
     text-decoration: underline;
     width: 130px;
     height: 30px;
-    margin-left: 125px;
+    margin-left: 39%;
     margin-bottom: 7%;
     border-radius: 20px;
     border: none;
