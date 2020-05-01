@@ -1,0 +1,54 @@
+#quest5{
+    background-color: rgb(17, 17, 17);
+    width: 32%;
+    height: 25%;
+    margin-left: 21%;
+    margin-top: 0%;
+    border-radius: 0px 15px 15px 15px;
+    position: absolute;
+}
+
+#h1{
+    font-family: 'Century Gothic';
+    color: white;    
+    padding-left: 6%;
+}
+
+#p{
+    font-family: 'Century Gothic';
+    margin-left: 5%;
+    margin-right: 10%;
+    color: white;
+}
+
+#Name{
+    background-color: dodgerblue;
+    width: 20%;    
+    height: 145px;
+    border-radius: 0px 15px 15px 15px;
+    padding-top: 20px;
+    position: absolute;
+    transition: 1s;
+}
+
+#seuNome{
+    font-family: 'Century Gothic';
+    color: white;   
+    margin-left: 45px;    
+    margin-top: 40px;    
+}
+
+#Nome{
+    background-color: white;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 30px;    
+    margin-top: 5px;
+    text-align: center;   
+    font-family: "Century Gothic";
+    padding-left: 6px;
+    transition: 1s;
+}
+
