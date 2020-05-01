@@ -1,0 +1,214 @@
+#Galeria img{
+    width: 45.5%;
+    height: 21%;
+    padding-left: 3%;
+    transition: 1s;
+}
+
+#Galeria2 img{
+    width: 90%;
+    height: 95%;
+    padding-left: 5%;
+    margin-top: 3%;
+    border-radius: 0px 15px 15px 15px;
+}
+
+#Galeria{
+    background-color: rgb(240, 83, 77);
+    width: 20%;    
+    height: 600px;
+    border-radius: 0px 15px 15px 15px;
+}
+
+#image2{
+    width: 33%;
+    height: 43%;
+    border-radius: 100%;    
+    margin-left: 260px;
+    z-index: 2;
+    position: absolute;
+    transition: 2s;
+}
+
+#h1{
+    font-family: 'Century Gothic';
+    color: white;    
+    padding-left: 6%;
+}
+
+#h11{
+    font-family: 'Century Gothic';
+    color: white;    
+    padding-left: 6%;
+    padding-top: 3%;
+}
+
+#p{
+    font-family: 'Century Gothic';
+    margin-left: 5%;
+    margin-right: 10%;
+    color: white;
+}
+
+
+#h12{
+    font-family: 'Century Gothic';
+    margin-left: 5%;
+    color: black;
+}
+
+#p2{
+    font-family: 'Century Gothic';
+    margin-left: 5%;
+    margin-right: 45%;
+    color: black;
+    position: absolute;
+}
+
+#quest1{
+    background-color: rgb(17, 17, 17);
+    width: 32%;
+    height: 25%;
+    margin-left: 21%;
+    margin-top: 0%;
+    border-radius: 0px 15px 15px 15px;
+    position: absolute;
+}
+
+#info{
+    background-color: rgb(255, 209, 58);
+    width: 32%;
+    height: 50%;
+    margin-left: 21%;
+    margin-top: 12.9%;
+    border-radius: 0px 15px 15px 15px;
+    position: absolute;
+}
+
+#Galeria2{
+    background-color: dodgerblue;
+    width: 33%;    
+    height: 600px;
+    margin-top: 0%;
+    margin-left: 54%;
+    border-radius: 0px 15px 15px 15px;
+    position: absolute;
+}
+
+input{
+    background-color: dodgerblue;
+    font-family: 'Century Gothic';
+    color: white;
+    border: none;
+    border-radius: 0px 15px 15px 15px;
+    padding: 10px;
+    margin-left: 21%;
+    margin-top: 37.5%;
+    z-index: 3;
+    position: absolute;
+}
+
+#info2{
+    display: none;
+    background-color:dodgerblue;
+    width: 34%;
+    height: 13.3%;
+    margin-left: 21%;
+    margin-top: 37.5%;
+    border-radius: 0px 15px 0px 15px;
+    position: absolute;
+}
+
+#p3{
+    display: none;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    z-index: 7;
+    position: absolute;
+}
+
+#p4{
+    display: none;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    position: absolute;
+}
+
+#p5{
+    display: none;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    z-index: 7;
+    position: absolute;
+}
+
+#p6{
+    display: none;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    position: absolute;
+}
+
+#p7{
+    display: none;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    z-index: 7;
+    position: absolute;
+}
+
+#p8{
+    display: none;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    position: absolute;
+}
+
+#p9{
+    display: none;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    z-index: 7;
+    position: absolute;
+}
+
+#p10{
+    display: none;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    position: absolute;
+}
+
+#p11{
+    display: block;
+    font-family: 'Century Gothic';
+    margin-left: 3%;
+    margin-top: 7.5%;
+    color: white;
+    margin-right: 0%;
+    position: absolute;
+}
