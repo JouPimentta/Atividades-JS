@@ -6,7 +6,8 @@ window.onload = () => {
         img.addEventListener('mouseenter', showPreview, false);
         img.addEventListener('mouseout', hidePreview, false);
         
-    }),
+    })
+
 }
 
 function showPreview(e){
