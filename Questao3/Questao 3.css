@@ -5,7 +5,7 @@
     transition: 1s;
 }
 
-#Galeria2 img{
+.preview img{
     width: 90%;
     height: 95%;
     padding-left: 5%;
@@ -85,7 +85,7 @@
     position: absolute;
 }
 
-#Galeria2{
+.preview{
     background-color: dodgerblue;
     width: 33%;    
     height: 600px;
@@ -211,4 +211,9 @@ input{
     color: white;
     margin-right: 0%;
     position: absolute;
+}
+
+#GaleryList{
+    list-style: none;
+    padding-left: 1%;
 }

@@ -1,24 +1,23 @@
 window.onload = () => {
 
-    var images = document.getElementsByClassName('small-img');
+    var images = document.getElementsByClass("small-img");
 
     images.forEach((img => {
-        img.addEventListener('mouseenter', showPreview, false);
-        img.addEventListener('mouseout', hidePreview, false);
+        img.addEventListener("mouseenter", showPreview, false);
+        img.addEventListener("mouseout", hidePreview, false);
         
-    })
-
-}
+    }),
+)}
 
 function showPreview(e){
     console.log(e.type);
-    var img = document.getElementById('show-preview');
+    var img = document.getElementById("show-preview");
     img.src = e.target.src;
 
 }
 
 function hidePreview(){
-    document.getElementById('showPreview').style.display = "none";
+    document.getElementById("showPreview").style.display = "none";
 }
 
 
