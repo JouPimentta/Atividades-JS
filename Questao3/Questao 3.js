@@ -1,4 +1,27 @@
-function funcaoOff(){
+window.onload = () => {
+
+    var images = document.getElementsByClassName('small-img');
+
+    images.forEach((img => {
+        img.addEventListener('mouseenter', showPreview, false);
+        img.addEventListener('mouseout', hidePreview, false);
+        
+    }),
+}
+
+function showPreview(e){
+    console.log(e.type);
+    var img = document.getElementById('show-preview');
+    img.src = e.target.src;
+
+}
+
+function hidePreview(){
+    document.getElementById('showPreview').style.display = "none";
+}
+
+
+/*function funcaoOff(){
     document.getElementById("image").src="image.png";       
     document.getElementById("p11").style.display="block";
     document.getElementById("p3").style.display="none";    
@@ -153,4 +176,4 @@ function show(){
 
 function hide(){
     document.getElementById("info2").style.display="none";
-}
+}*/
