@@ -1,6 +1,9 @@
 window.onload = () => {
 
-    var images = document.getElementsByClass("small-img");
+    var images = document.getElementsByClass("small-img");]
+    var button = document.getElementById('button');
+    
+    button.addEventListener('click', toggle, false);
 
     images.forEach((img => {
         img.addEventListener("mouseenter", showPreview, false);
@@ -18,6 +21,22 @@ function showPreview(e){
 
 function hidePreview(){
     document.getElementById("showPreview").style.display = "none";
+}
+
+
+function toggle(){
+    var info = document.getElementById("info2");
+    var condicao = info.style.display != "block";
+
+    if (condicao) {
+
+        info.style.display = "block"
+        
+    }else{
+    
+        info.style.display = "none"
+    
+    }
 }
 
 
