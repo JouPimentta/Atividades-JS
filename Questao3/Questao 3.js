@@ -1,16 +1,16 @@
 window.onload = () => {
 
-    var images = document.getElementsByClass("small-img");]
+    var images = document.getElementsByClassName("small-img");
     var button = document.getElementById('button');
     
     button.addEventListener('click', toggle, false);
 
-    images.forEach((img => {
+    Array.from(arrayLike).forEach((img) =>{
         img.addEventListener("mouseenter", showPreview, false);
         img.addEventListener("mouseout", hidePreview, false);
         
-    }),
-)}
+    });
+}
 
 function showPreview(e){
     console.log(e.type);
@@ -20,7 +20,7 @@ function showPreview(e){
 }
 
 function hidePreview(){
-    document.getElementById("showPreview").style.display = "none";
+    document.getElementById("show-preview").style.display = "none";
 }
 
 
@@ -30,11 +30,11 @@ function toggle(){
 
     if (condicao) {
 
-        info.style.display = "block"
+        info.style.display = "block";
         
     }else{
     
-        info.style.display = "none"
+        info.style.display = "none";
     
     }
 }
