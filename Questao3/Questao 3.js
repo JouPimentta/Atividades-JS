@@ -1,11 +1,11 @@
 window.onload = () => {
 
     var images = document.getElementsByClassName("small-img");
-    var button = document.getElementById('button');
+    //var button = document.getElementById('button');
     
-    button.addEventListener('click', toggle, false);
+    //button.addEventListener('click', toggle, false);
 
-    Array.from(arrayLike).forEach((img) =>{
+    Array.from(images).forEach((img) =>{
         img.addEventListener("mouseenter", showPreview, false);
         img.addEventListener("mouseout", hidePreview, false);
         
@@ -20,11 +20,11 @@ function showPreview(e){
 }
 
 function hidePreview(){
-    document.getElementById("show-preview").style.display = "none";
+    document.getElementById("show-preview").style.display = "block";
 }
 
 
-function toggle(){
+/*function toggle(){
     var info = document.getElementById("info2");
     var condicao = info.style.display != "block";
 
@@ -39,8 +39,7 @@ function toggle(){
     }
 }
 
-
-/*function funcaoOff(){
+function funcaoOff(){
     document.getElementById("image").src="image.png";       
     document.getElementById("p11").style.display="block";
     document.getElementById("p3").style.display="none";    
